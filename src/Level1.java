@@ -41,13 +41,12 @@ public class Level1 {
                 f++;
                 h = z;
             }
-            if (z != h && z > 1 && g > 1) return false;
+            if (z != h && z > 1 && g >= 1) return false;
             if (z != h && g > 1) f++;
             if (f >= 2) return false;
         }
 
         return true;
-
     }
 }
 
